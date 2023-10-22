@@ -15,7 +15,7 @@ const cookieParser = require('cookie-parser')
 
 
 const corsOptions = {
-    origin: 'http://localhost:3006',
+    origin: `${process.env.CORS_ORIGIN}`,
     credentials: true, // This is important for cookies
   };
 
